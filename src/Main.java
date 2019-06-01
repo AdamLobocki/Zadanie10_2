@@ -5,11 +5,11 @@ public class Main {
         Math math = new Math();
 
         int[] array = new int[10];
-        int a = 5;
+        int a = 7;
 
 
         for (int i = 0; i < array.length; i++) {
-            array[i] = i + 1;
+            array[i] = i + 15;
         }
 
         for (int i = 0; i < array.length; i++) {
