@@ -1,7 +1,7 @@
 public class Math {
 
     int[] numbers(int[] arr, int a) {
-
+        int[] array = new int[arr.length];
         if (arr == null) {
             System.out.println("Zła tablica");
 
@@ -11,17 +11,21 @@ public class Math {
             System.out.println("Zła liczba");
 
         } else {
+
+            int x = 1;
             for (int i = 0; i < arr.length; i++) {
+
                 if (i < a) {
-                    arr[i] = a - i;
+                    array[i] = arr[a - x];
+                    x++;
 
                 } else {
-                    arr[i] = i;
+                     array[i] = arr[i];
 
                 }
             }
         }
-            return arr;
+            return array;
 
     }
 
